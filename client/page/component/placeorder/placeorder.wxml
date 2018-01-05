@@ -1,0 +1,19 @@
+<view class="main">
+    <view class="form-box">
+        <form bindsubmit="formSubmit">
+            <view class="section">
+              <picker bindchange="bindPickerChange" value="{{index}}" range="{{pickupLocations}}">
+                <view class="picker">
+                  点击选择取餐地点：{{pickupLocations[index]}}
+                </view>
+              </picker>
+            </view>
+            <input value="{{memo}}" placeholder="备注" bindinput="bindName"/>
+            <view class="address-box">
+                <view class="address-manage">
+                    <navigator url="/page/component/payment/payment">前去付款</navigator>
+                </view>
+            </view>
+        </form>
+    </view>
+</view>

@@ -1,0 +1,11 @@
+<view class="main">
+    <view class="form-box">
+        <form bindsubmit="formSubmit">
+            <input value="{{card.name}}" placeholder="持卡人姓名" bindinput="bindName"/>
+            <input value="{{card.cardDigits}}" placeholder="卡号" bindinput="bindCardDigits"/>
+            <input type="number" value="{{card.validDate}}" placeholder="有效日期" bindinput="bindValidDate" />
+            <input value="{{card.cvv}}" placeholder="CVV" bindinput="bindCvv"/>
+            <button form-type="submit" bindtap="bindpayment">付款</button>
+        </form>
+    </view>
+</view>
